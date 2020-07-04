@@ -1,0 +1,96 @@
+* {
+    box-sizing: border-box;
+    font-family: Arial, Helvetica, sans-serif;
+}
+
+body {
+    margin: 0px;
+}
+button {
+    cursor: pointer;
+}
+
+.base {
+    height: 100vh;
+    width: 100vw;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.wrapper {
+    width: 100%;
+    max-width: 400px;
+    /* border: 1px solid #f1f1f1; */
+    box-shadow: 0px 2px 3px 1px rgba(0,0,0,0.100);
+    border-radius: 16px;
+    overflow: hidden;
+}
+
+.header {
+    width: 100%;
+    height: 60px;
+    display: grid;
+    background-color: #1582ff;
+    color: white;
+    grid-template-columns: 50px 1fr 50px;
+}
+.monthAndYear {
+    width: 100%;
+    height: 100%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+.nav {
+    border: 0px;
+    background-color: transparent;
+    font-size: 16px;
+    font-weight: 600;
+    outline: none;
+    transition: all .3s ease;
+    color: white;
+}
+.nav:hover, .nav:focus {
+    background-color: #157aec;
+}
+
+.dayNames, .dayDates {
+    margin: 10px 0;
+    width: 100%;
+    display: grid;
+    grid-template-columns: 1fr 1fr 1fr 1fr 1fr 1fr 1fr;
+}
+.dayNames div {
+    height: 30px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    font-size: 13px;
+    font-weight: 600;
+}
+.dayDates button {
+    height: 44px;
+    background-color: transparent;
+    border: 0px;
+    outline: none;
+    transition: all .3s ease;
+}
+.dayDates button:hover {
+    background-color: #f1f1f1;
+}
+.prevDate {
+    color: #c5c5c5;
+}
+.today, .today div {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+.today div {
+    height: 24px;
+    width: 24px;
+    background-color: #1582ff;
+    border-radius: 50%;
+    color: white;
+}
