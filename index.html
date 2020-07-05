@@ -8,14 +8,20 @@
 </head>
 <body>
     <div class="base">
-        <div class="wrapper">
-            <div class="header">
-                <button type="button" class="nav" id="prevButton"><</button>
-                <div class="monthAndYear" id="monthAndYear"></div>
-                <button type="button" class="nav" id="nextButton">></button>
+        <div class="centering">
+            <div class="calender">
+                <div class="header">
+                    <button type="button" class="nav" id="prevButton"><</button>
+                    <button class="monthAndYear" id="monthAndYear"></button>
+                    <button type="button" class="nav" id="nextButton">></button>
+                </div>
+                <div class="content">
+                    <div class="dayNames" id="dayNames"></div>
+                    <div class="dayDates" id="dayDates"></div>
+                    <div class="monthSection select" id="monthSection"></div>
+                    <div class="yearSection select" id="yearSection"></div>
+                </div>
             </div>
-            <div class="dayNames" id="dayNames"></div>
-            <div class="dayDates" id="dayDates"></div>
         </div>
     </div>
     <script type="text/javascript" src="main.js"></script>
